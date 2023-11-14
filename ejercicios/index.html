@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Ejercicios Eventos</title>
+</head>
+
+<body class="bg-green-300">
+    <header class="text-center">
+        <h1 class="text-6xl">Ejercicios Eventos</h1>
+    </header>
+    <main class="flex flex-col items-center">
+        <div id="contenedor" class="w-[600px] h-[750px] bg-green-500 text-center flex flex-col items-center">
+            <div class=" gris w-[400px] h-[400px] bg-gray-500 flex mt-12" id="cuadradocolor">
+            </div>
+            <label class="">
+                <input type="submit" value="cambiar" name="submit" id="cambiar"
+                    class="bg-yellow-500 w-[150px] h-[100px] mt-12">
+            </label>
+        </div>
+        <div id="contenedor2" class="w-[600px] h-[750px] bg-green-500 flex flex-col items-center">
+            <div id="cuadradotexto" class="w-[400px] h-[400px] bg-gray-500 flex mt-12 items-center text-center ">
+                
+            </div>
+            <label for=""class="flex flex-col items-center">
+                <input type="text" value="texto" name="texto" id="texto" class="w-[150px] h-[100px] mt-12 text-center">
+                <input type="button" value="borrar" id="borrar" class="bg-yellow-500 w-[150px] h-[100px] mt-12" >
+            </label>
+        </div>
+        <div id="contenedor3" class="w-[600px] h-[750px] bg-green-500 flex flex-col items-center" >
+            <form class="flex mt-12 flex-col items-center text-center">
+                <label for="peso" class="flex flex-col items-center" >Peso (kg): </label>
+                <input type="number" id="peso" placeholder="Ingrese su peso">
+            
+                <label for="altura" class="flex flex-col items-center" >Altura (cm): </label>
+                <input type="number" id="altura" placeholder="Ingrese su altura">
+            
+                <button id="calcular"class="bg-yellow-500 w-[150px] h-[100px] mt-12" >Calcular</button>
+            
+                <label for="imcInput"class="flex flex-col items-center"> Su indice de masa corporal es: </label>
+                <input type="text" id="imc" readonly>
+              </form>
+              
+
+        </div>
+        <div id="contenedor4" class="w-[600px] h-[750px] bg-green-500 flex flex-col items-center"  >
+            <form class="flex mt-12 flex-col items-center text-center">
+                <label for="pesoarg" class="flex flex-col items-center" >Moneda local: </label>
+                <input type="number" id="pesoarg">
+            
+                <label for="dolares" class="flex flex-col items-center" >Dolares: </label>
+                <input type="number" id="dolares">
+                <label for="resultado" class="flex flex-col items-center" > Monto en dolares: </label>
+                <input type="number" id="resultado" readonly>
+            
+                <button id="convertir"class="bg-yellow-500 w-[150px] h-[100px] mt-12" >Convertir</button>
+                <button id="reset"class="bg-yellow-500 w-[150px] h-[100px] mt-12" >Borrar</button>
+            
+                
+              </form>
+
+        </div>
+
+
+
+    </main>
+    <footer class="text-center bg-green-100">
+        <p>Camila Cein MindHub Cohort 52</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
